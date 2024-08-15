@@ -1,12 +1,3 @@
-// const personName = "valera";
-// let result = "";
-
-// for (let i = personName.length - 1; i >= 0; --i) {
-//   result += personName[i];
-// }
-
-// console.log(result);
-
 function solution(str) {
   let result = "";
 
