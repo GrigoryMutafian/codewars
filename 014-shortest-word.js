@@ -1,14 +1,14 @@
-function findShort(s) {
-  let res = 999;
-  let newArr = s.split(" ");
+function findShort(str) {
+  let result = 999;
+  let newArr = str.split(" ");
 
   for (let i = 0; i < newArr.length; i++) {
     if (newArr[i].length < res) {
-      res = newArr[i].length;
+      result = newArr[i].length;
     }
   }
 
-  return res++;
+  return result++;
 }
 
 console.log(
