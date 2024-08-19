@@ -1,9 +1,6 @@
-function arrayDiff(arr1, arr2) {
-  let result = arr1.filter(function (element) {
-    return arr2.indexOf(element) === -1;
-  });
-
-  return result;
+function array_diff(arr, arr2) {
+  arr2 = new Set(arr2);
+  return arr.filter((num) => !arr2.has(num));
 }
 
 console.log(([1, 2, 2], [2]), [1], "a was [1,2,2], b was [2]");

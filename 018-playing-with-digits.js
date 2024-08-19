@@ -5,7 +5,6 @@ function digPow(numbers, steps) {
   for (let i = 0; i < arrNum.length; i++) {
     result += arrNum[i] ** steps;
     steps++;
-    console.log(result);
   }
 
   return result % numbers === 0 ? result / numbers : -1;
