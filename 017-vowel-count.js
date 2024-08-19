@@ -1,7 +1,7 @@
 function getCount(str) {
   let result = 0;
   const newArr = str.split("");
-  let step = newArr[i];
+  const step = newArr[i];
 
   for (let i = 0; i < newArr.length; i++) {
     if (

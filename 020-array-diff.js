@@ -1,5 +1,6 @@
 function array_diff(arr, arr2) {
   arr2 = new Set(arr2);
+
   return arr.filter((num) => !arr2.has(num));
 }
 
