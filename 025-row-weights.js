@@ -15,3 +15,6 @@ function rowWeights(array) {
 }
 
 console.log(rowWeights([70, 58, 75, 34, 91]), [236, 92]);
+console.log(rowWeights([100, 50]), [100, 50]);
+console.log(rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]);
+console.log(rowWeights([80]), [80, 0]);
