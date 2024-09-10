@@ -1,30 +1,30 @@
+const result = [];
+
+function pushNums(color) {
+  let letter = color.toString(16);
+  if (letter.length === 1) {
+    letter = "0" + letter;
+  }
+  result.push(letter);
+}
+
+function check(color) {
+  if (color > 255) {
+    return 255;
+  } else if (color < 0) {
+    return 0;
+  }
+  return color;
+}
+
 function rgb(red, green, blue) {
-  const result = [];
+  let newHashOfRed = check(red);
+  let newHashOfGreen = check(green);
+  let newHashOfBlue = check(blue);
 
-  function check(color) {
-    if (color > 255) {
-      return 255;
-    } else if (color < 0) {
-      return 0;
-    }
-    return color;
-  }
-
-  red = check(red);
-  green = check(green);
-  blue = check(blue);
-
-  function pushNums(color) {
-    let letter = color.toString(16);
-    if (letter.length === 1) {
-      letter = "0" + letter;
-    }
-    result.push(letter);
-  }
-
-  pushNums(red);
-  pushNums(green);
-  pushNums(blue);
+  pushNums(newHashOfRed);
+  pushNums(newHashOfGreen);
+  pushNums(newHashOfBlue);
 
   return result.join("").toUpperCase();
 }

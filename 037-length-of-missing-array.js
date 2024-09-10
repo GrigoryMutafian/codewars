@@ -44,7 +44,6 @@ console.log(
   ]),
   9
 );
-
 console.log(getLengthOfMissingArray([[null], [null, null, null]]), 2);
 console.log(getLengthOfMissingArray([]), 0);
 console.log(
